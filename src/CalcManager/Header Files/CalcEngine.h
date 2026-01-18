@@ -90,6 +90,7 @@ public:
     wchar_t DecimalSeparator() const;
 
     std::vector<std::shared_ptr<IExpressionCommand>> GetHistoryCollectorCommandsSnapshot() const;
+    NUM_WIDTH GetCurrentNumWidth() const;
 
     // Static methods for the instance
     static void

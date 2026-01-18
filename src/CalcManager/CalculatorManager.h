@@ -118,6 +118,7 @@ namespace CalculationManager
             return m_pHistory->MaxHistorySize();
         }
         CalculationManager::Command GetCurrentDegreeMode();
+        NUM_WIDTH GetCurrentNumWidth();
         void SetInHistoryItemLoadMode(_In_ bool isHistoryItemLoadMode);
         std::vector<std::shared_ptr<IExpressionCommand>> GetDisplayCommandsSnapshot() const;
     };

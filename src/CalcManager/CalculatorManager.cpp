@@ -563,6 +563,11 @@ namespace CalculationManager
         return m_currentDegreeMode;
     }
 
+    NUM_WIDTH CalculatorManager::GetCurrentNumWidth()
+    {
+        return m_currentCalculatorEngine ? m_currentCalculatorEngine->GetCurrentNumWidth() : NUM_WIDTH::QWORD_WIDTH;
+    }
+
     wstring CalculatorManager::GetResultForRadix(uint32_t radix, int32_t precision, bool groupDigitsPerRadix)
     {
         return m_currentCalculatorEngine ? m_currentCalculatorEngine->GetCurrentResultForRadix(radix, precision, groupDigitsPerRadix) : L"";
